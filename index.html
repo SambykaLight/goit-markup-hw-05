@@ -26,7 +26,7 @@
         <nav class="top-list">
           <a href="" class="top-logo">webstudio</a>
           <ul class="header-list list">
-            <li><a href="" class="list-link-current link">studio</a></li>
+            <li><a href="" class="list-link current link">studio</a></li>
             <li>
               <a href="./portfolio.html" class="list-link link">portfolio</a>
             </li>
@@ -44,7 +44,6 @@
               >
             </li>
             <li class="tel-names">
-              
               <a class="tel-link link" href="tel:+380961111111"
                 ><svg class="icon-tel" width="10" height="16">
                   <use href="./img/icons.svg#smartphone"></use>
@@ -60,7 +59,7 @@
       <section class="overlay hero">
         <div class="container">
           <h1 class="hero-title">efective solutions for your business</h1>
-          <button type="button" class="hero-btn btn">
+          <button type="button" class="hero-btn btn" data-modal-open>
             Request our service
           </button>
         </div>
@@ -127,28 +126,37 @@
           <h2 class="content-title">what we do</h2>
           <ul class="content-list">
             <li>
-              <img
-                src="./img/wwd1.jpg"
-                width="370"
-                height="294"
-                alt="taping on table"
-              />
+              <div class="content-about">
+                <img
+                  src="./img/wwd1.jpg"
+                  width="370"
+                  height="294"
+                  alt="taping on table"
+                />
+                <p class="content-about-text">dector apps</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./img/wwd2.jpg"
-                width="370"
-                height="294"
-                alt="checking phone soft"
-              />
+              <div class="content-about">
+                <img
+                  src="./img/wwd2.jpg"
+                  width="370"
+                  height="294"
+                  alt="checking phone soft"
+                />
+                <p class="content-about-text">mobile apps</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./img/wwd3.jpg"
-                width="370"
-                height="294"
-                alt="choosing colors"
-              />
+              <div class="content-about">
+                <img
+                  src="./img/wwd3.jpg"
+                  width="370"
+                  height="294"
+                  alt="choosing colors"
+                />
+                <p class="content-about-text">design solutions</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -574,5 +582,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="18" height="18">
+            <use href="./img/icons.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
